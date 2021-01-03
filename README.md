@@ -99,7 +99,7 @@ Will set the environment variable `PASSWORD` based on the contents of the `/run/
 ## Umask for running applications
 
 This image provides the ability to override the default umask settings for services started within the containers using the optional `-e UMASK=022` setting.
-Keep in mind umask is not chmod, it ~~subtracts~~ masks permissions based on it's value. Please read up [here](https://en.wikipedia.org/wiki/Umask) for more information.
+Keep in mind umask is not chmod, it masks permissions based on it's value. Please read up [here](https://en.wikipedia.org/wiki/Umask) for more information.
 
 
 ## User / Group Identifiers
@@ -128,7 +128,6 @@ In this instance `PUID=1000` and `PGID=1000`, to find yours use `id user` as bel
 
 
 ## Support Info
-
 * Shell access whilst the container is running: `docker exec -it deluge /bin/bash`
 * To monitor the logs of the container in realtime: `docker logs -f deluge`
 
@@ -169,7 +168,7 @@ Below are the instructions for updating containers:
   ```
   git clone https://github.com/edifus/docker-deluge.git
   cd docker-deluge
-  docker build  --no-cache --pull -t test/deluge .
+  docker build  --no-cache --pull -t edifus/deluge:test .
   ```
 
 
