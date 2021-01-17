@@ -123,7 +123,7 @@ In this instance `PUID=1000` and `PGID=1000`, to find yours use `id user` as bel
 
 
 ## Docker Mods
-* [Filebot mod](https://github.com/edifus/deluge-filebot-mod) 
+* [Filebot mod](https://github.com/edifus/docker-mods/tree/deluge-filebot)
   * Adds MediaInfo and Filebot to support [FileBotTool plug-in](https://github.com/Laharah/deluge-FileBotTool)
 
 
