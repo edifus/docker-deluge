@@ -6,6 +6,7 @@ LABEL maintainer="edifus"
 # environment variables
 ARG DEBIAN_FRONTEND="noninteractive"
 ENV PYTHON_EGG_CACHE="/config/plugins/.python-eggs"
+ENV HOME="/config"
 
 # install software
 RUN \
