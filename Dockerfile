@@ -1,4 +1,4 @@
-FROM edifus/baseimage-ubuntu:bionic
+FROM ghcr.io/linuxserver/baseimage-ubuntu:bionic
 
 # set version label
 LABEL maintainer="edifus"
@@ -8,7 +8,7 @@ ARG DEBIAN_FRONTEND="noninteractive"
 ENV PYTHON_EGG_CACHE="/config/plugins/.python-eggs"
 ENV HOME="/config"
 
-# install software
+# install software (deluge 1.3.15)
 RUN \
  echo "**** add repositories ****" && \
  apt-get update && \
@@ -24,7 +24,7 @@ RUN \
 	deluged \
 	deluge-console \
 	deluge-web \
-        python-requests \
+	python-requests \
 	p7zip-full \
 	unrar \
 	unzip && \
