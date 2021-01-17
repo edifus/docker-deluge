@@ -1,7 +1,8 @@
 [![GitHub Stars](https://img.shields.io/github/stars/edifus/docker-deluge.svg?color=337ab7&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/edifus/docker-deluge)
 [![GitHub Release](https://img.shields.io/github/release/edifus/docker-deluge.svg?color=337ab7&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/edifus/docker-deluge/releases)
-[![Docker Pulls](https://img.shields.io/docker/pulls/edifus/deluge.svg?color=337ab7&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=pulls&logo=docker)](https://hub.docker.com/r/edifus/deluge)
 [![Docker Stars](https://img.shields.io/docker/stars/edifus/deluge.svg?color=337ab7&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=stars&logo=docker)](https://hub.docker.com/r/edifus/deluge)
+[![Docker Pulls](https://img.shields.io/docker/pulls/edifus/deluge.svg?color=337ab7&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=pulls&logo=docker)](https://hub.docker.com/r/edifus/deluge)
+[![Docker Image Size](https://img.shields.io/docker/image-size/edifus/deluge.svg?color=337ab7&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=size&logo=docker)](https://hub.docker.com/r/edifus/deluge)
 
 # [edifus/deluge](https://github.com/edifus/docker-deluge)
 
