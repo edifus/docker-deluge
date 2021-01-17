@@ -1,3 +1,7 @@
+[![GitHub Stars](https://img.shields.io/github/stars/edifus/docker-deluge.svg?color=337ab7&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/edifus/docker-deluge)
+[![GitHub Release](https://img.shields.io/github/release/edifus/docker-deluge.svg?color=337ab7&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/edifus/docker-deluge/releases)
+[![Docker Pulls](https://img.shields.io/docker/pulls/edifus/deluge.svg?color=337ab7&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=pulls&logo=docker)](https://hub.docker.com/r/edifus/deluge)
+[![Docker Stars](https://img.shields.io/docker/stars/edifus/deluge.svg?color=337ab7&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=stars&logo=docker)](https://hub.docker.com/r/edifus/deluge)
 
 # [edifus/deluge](https://github.com/edifus/docker-deluge)
 
@@ -40,7 +44,7 @@ services:
       - TZ=Europe/London
       - UMASK_SET=022 #optional
       - DELUGE_LOGLEVEL=error #optional
-      - DOCKER_MODS=user/repo:tag #optional
+      - DOCKER_MODS=edifus/mods:deluge-filebot #optional
     volumes:
       - /path/to/deluge/config:/config
       - /path/to/your/downloads:/downloads
@@ -58,7 +62,7 @@ docker run -d \
   -e TZ=Europe/London \
   -e UMASK_SET=022 `#optional` \
   -e DELUGE_LOGLEVEL=error `#optional` \
-  -e DOCKER_MODS=user/repo:tag `#optional` \
+  -e DOCKER_MODS=edifus/mods:deluge-filebot `#optional` \
   -v /path/to/deluge/config:/config \
   -v /path/to/your/downloads:/downloads \
   --restart unless-stopped \
