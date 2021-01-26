@@ -40,7 +40,6 @@ jobs:
       - name: Push tags to GitHub Container Registry
         if: ${{ env.CR_USER && env.CR_PAT }}
         run: |
-          docker push ghcr.io/${ENDPOINT}:${{ github.sha }}
           docker push ghcr.io/${ENDPOINT}
       - name: Login to DockerHub
         if: ${{ env.DOCKERUSER && env.DOCKERPASS }}
@@ -49,5 +48,4 @@ jobs:
       - name: Push tags to DockerHub
         if: ${{ env.DOCKERUSER && env.DOCKERPASS }}
         run: |
-          docker push ${ENDPOINT}:${{ github.sha }}
           docker push ${ENDPOINT}
