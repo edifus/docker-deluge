@@ -3,7 +3,7 @@ name: Build Image
 on: [push, pull_request, workflow_dispatch]
 
 env:
-  ENDPOINT: "edifus/docker"
+  ENDPOINT: "edifus/deluge"
   BRANCH: "master"
 
 jobs:
